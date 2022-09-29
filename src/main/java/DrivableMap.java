@@ -34,7 +34,7 @@ class DrivableMap {
      *
      * @param id   The ID of item
      * @param item A Drivable object
-     * @return True iff The Drivable was added to drivable_map
+     * @return True iff the Drivable object was added to drivable_map
      */
     public boolean addDrivable(String id, Drivable item) {
         if (drivable_map.get(id) != null) {

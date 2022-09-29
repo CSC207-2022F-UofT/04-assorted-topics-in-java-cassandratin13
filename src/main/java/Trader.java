@@ -40,7 +40,8 @@ public class Trader<T> {
      *       empty ArrayLists for their inventory and wishlist.
      */
     /**
-     * Construct a Trader, giving them the given money.
+     * Construct a Trader, giving them the given money
+     * and an empty wishlist and inventory.
      *
      * @param money The Trader's money
      */
@@ -70,10 +71,10 @@ public class Trader<T> {
      *       We will call this in exchangeMoney().
      */
     /**
-     * Return the given object's price if it's Tradable, and -1 if not.
+     * Return the given object's selling price if it's Tradable, and -1 if not.
      *
      * @param item  An Object of type T
-     * @return item's price if it's Tradable, and -1 (Tradable.MISSING_PRICE) if not
+     * @return item's selling price if it's Tradable, and -1 if not
      */
     public int getSellingPrice(T item) {
         if (item instanceof Tradable) {
